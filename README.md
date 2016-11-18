@@ -36,39 +36,39 @@ For Android apps we expect you to use the latest version of Android Studio, and 
 
 ##Example API response:
 
-```javascript
+```json
 {
   "timestamp": "10/08/2016 10:40:23",
-  "bets": [
+    "bets": [
     {
-      "betId": 0,
-      “stake": 10,
-      “odds": "1/2",
-      “market": "Arsenal to Win 2-1"
+      "betId"  : 0,
+      “stake"  : 10,
+      “odds"   : "1/2",
+      “market" : "Arsenal to Win 2-1"
     },
     {
-      "betId": 1,
-      “stake": 35,
-      “odds": "11/2",
-      “market": "Arsenal to Win 3-1"
+      "betId"  : 1,
+      “stake"  : 35,
+      “odds"   : "11/2",
+      “market" : "Arsenal to Win 3-1"
     },
     {
-      "betId": 2,
-      “stake": 0.5,
-      “odds": "7/4",
-      “market": "Draw 1-1"
+      "betId"  : 2,
+      “stake"  : 0.5,
+      “odds"   : "7/4",
+      “market" : "Draw 1-1"
     },
     {
-      "betId": 3,
-      “stake": 100,
-      “odds": "8/1",
-      “market": "Draw 3-3"
+      "betId"  : 3,
+      “stake"  : 100,
+      “odds"   : "8/1",
+      “market" : "Draw 3-3"
     },
     {
-      "betId": 4,
-      “stake": 2.5,
-      “odds": "1/2",
-      “market": "Manchester Win 1-0"
+      "betId"  : 4,
+      “stake"  : 2.5,
+      “odds"   : "1/2",
+      “market" : "Manchester Win 1-0"
     }
   ]
 }
