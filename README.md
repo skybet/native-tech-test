@@ -2,19 +2,29 @@
 
 ## Scenario
 
-You are asked to build a new feature for a betting app, to allow the user to track the odds and the changes to potential payouts during the life of an in-play bet.
+You are asked to build a new feature for a betting app, this is to allow the user to login using a Pin / finger print / face scanning depending on device.
 
-In future the data will come from a RESTful API but for now you will need to build a stub for this; an example JSON response is given below.
+On initial load the App should ask for the user to enter a PIN which needs to be stored securly on the device.
+
+On subsequent launches the App should ask for either a PIN / finger print / face Id depending on the users device preference.
+
+The App should load a WebView from the included content - index.html
+
+When the user has been logged in securely then you will need to call a javascript method on the web content called loggedIn(), this should then display that the user is logged in.
+
+The App should also listen for events coming from the Web View for the user logging out called loggedOut().
 
 ## What we require
 
 You will build an app that works across a range of device sizes in both landscape and portrait orientations.
 
-On load, the user is expected to enter a 4 digit PIN or use TouchID to access the app if it is available.
+On load, the user is expected to enter a 4 digit PIN or use TouchID/Face ID to access the app if it is available.
 
-It will load the user’s bets from the API, showing them ordered by expiry.
+You should build a robust mechanism to allow the App to talk to the Web and Vice-Versa
 
-If the odds change the user expects to be informed, even if the app is closed. 
+Your App should not crash.
+
+You should support the latest OS for devices and the last preceeding one. e.g iOS 11 & iOS 10.
 
 ##Expectations
 
@@ -22,9 +32,11 @@ We value well structured, modular, reusable code with unit tests that is easily 
 
 Spend up to 6 hours over no more than 5 days on this. We expect to see regular commits to Git with meaningful commit messages.
 
+You will write this in Objective-C for iOS & Java for Android
+
 You should not use a code generation tool/frameworks
 
-For Android apps we expect you to use the latest version of Android Studio, and for iOS the latest version of XCode.
+For Android apps we expect you to use the latest version of Android Studio, and for iOS the latest version of XCode. No Beta versions.
 
 ## What to submit
 
@@ -34,42 +46,4 @@ For Android apps we expect you to use the latest version of Android Studio, and 
 
 * A covering note explaining the technology choices you have made.
 
-##Example API response:
 
-```json
-{
-  "timestamp": "10/08/2016 10:40:23",
-    "bets": [
-    {
-      "betId"  : 0,
-      "stake"  : 10,
-      "odds"   : "1/2",
-      "market" : "Arsenal to Win 2-1"
-    },
-    {
-      "betId"  : 1,
-      "stake"  : 35,
-      "odds"   : "11/2",
-      "market" : "Arsenal to Win 3-1"
-    },
-    {
-      "betId"  : 2,
-      "stake"  : 0.5,
-      "odds"   : "7/4",
-      "market" : "Draw 1-1"
-    },
-    {
-      "betId"  : 3,
-      "stake"  : 100,
-      "odds"   : "8/1",
-      "market" : "Draw 3-3"
-    },
-    {
-      "betId"  : 4,
-      "stake"  : 2.5,
-      "odds"   : "1/2",
-      "market" : "Manchester Win 1-0"
-    }
-  ]
-}
-```
