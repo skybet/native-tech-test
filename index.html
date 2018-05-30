@@ -1,0 +1,18 @@
+<html>
+<script type="text/javascript">
+
+	function login() {
+		buttonText.textContent = "You are logged in";
+        webkit.messageHandlers.userLogin.postMessage({"status":"loggedIn"});
+	}
+	
+	function logout() {
+		buttonText.textContent = "You are logged out";
+        webkit.messageHandlers.userLogin.postMessage({"status":"loggedOut"});
+	}
+   
+</script>
+<body style="background-color:#CE5937;">
+    <span style="background-color: #4485b8; color: #fff; display: inline-block; padding: 2px 8px; font-weight: bold; font-size: 28px; border-radius: 5px;"><div id="buttonText" onclick='logout()'>BUTTON</div></span>
+</body>
+</html>
