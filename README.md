@@ -4,7 +4,7 @@
 
 You are asked to build a new feature for a betting app, this is to allow the user to login using a Pin / finger print / face scanning depending on device once authenticated the user will then see a list of runners in a horse race.
 
-On initial load the App should ask for the user to enter a PIN which needs to be stored securly on the device.
+On initial load the App should ask for the user to enter a PIN which needs to be stored securely on the device.
 
 On subsequent launches the App should ask for either a PIN / finger print / face Id depending on the users device preference.
 
@@ -36,7 +36,7 @@ Some rules to follow about the data.
 
 Your App should not crash.
 
-You should support the latest OS for devices and the last preceeding one. e.g iOS 11 & iOS 10.
+You should support the latest OS for devices and the last preceding one. e.g iOS 11 & iOS 10.
 
 ##Expectations
 
