@@ -2,15 +2,15 @@
 
 ## Scenario
 
-You are asked to build a new feature for a betting app, this is to allow the user to login using a Pin / finger print / face scanning depending on device.
+You are asked to build a new feature for a betting app, this is to allow the user to login using a Pin / finger print / face scanning depending on device once authenticated the user will then see a list of runners in a horse race.
 
 On initial load the App should ask for the user to enter a PIN which needs to be stored securly on the device.
 
 On subsequent launches the App should ask for either a PIN / finger print / face Id depending on the users device preference.
 
-The App should load a WebView from the included content - index.html
+The App should load a hidden WebView from the included content - index.html
 
-When the user has been logged in securely then you will need to call a javascript method on the web content called loggedIn(), this should then display that the user is logged in.
+When the user has been logged in securely then you will need to call a javascript method on the web content called loggedIn().
 
 The App should also listen for events coming from the Web View for the user logging out called loggedOut().
 
@@ -21,6 +21,18 @@ You will build an app that works across a range of device sizes in both landscap
 On load, the user is expected to enter a 4 digit PIN or use TouchID/Face ID to access the app if it is available.
 
 You should build a robust mechanism to allow the App to talk to the Web and Vice-Versa
+
+Once authenticated, Load in race data for a horse race meeting and display this in the App once the user has logged in. Sample data is in techtest.json
+
+Some rules to follow about the data.
+
+- ids for horses are passed back from race "api" 
+- Minimum information to be displayed: Cloth Number, Days since last run, age, form
+- Should be able to order by : form, odds, cloth number, age
+- Age calculated by : Horses foaled in any given year are classified as being born on Jan 1st therefore horse age is simply curr year - foaled year.
+- Form order to be calculated by : curr season results /  last 3 results average (rounded up to nearest integer) are lower / tie breaker being last race horse was in
+- stubbed or mocked network call to api
+- non runners shouldn't be shown, the only indication of this is a withdrawn : true boolean in json
 
 Your App should not crash.
 
