@@ -16,8 +16,6 @@ The App should also listen for events coming from the Web View for the user logg
 
 ## What we require
 
-You will build an app that works across a range of device sizes in both landscape and portrait orientations.
-
 You should build a robust mechanism to allow the App to talk to the Web and Vice-Versa
 
 Once authenticated, Load in race data for a horse race meeting and display this in the App once the user has logged in. Sample data is in techtest.json
