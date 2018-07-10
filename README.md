@@ -8,29 +8,14 @@ On initial load the App should ask for the user to enter a PIN which needs to be
 
 On subsequent launches the App should ask for either a PIN / finger print / face Id depending on the users device preference.
 
-The App should load a hidden WebView from the included content - index.html for iOS / index-and.html for Android
+The App should load a WebView and load the skybet website https://m.skybet.com
 
-When the user has been logged in securely then you will need to call a javascript method on the web content called loggedIn().
-
-The App should also listen for events coming from the Web View for the user logging out called loggedOut().
 
 ## What we require
 
 You should build a robust mechanism to allow the App to talk to the Web and Vice-Versa
 
-Once authenticated, Load in race data for a horse race meeting and display this in the App once the user has logged in. Sample data is in techtest.json
-
-Some rules to follow about the data.
-
-- ids for horses are passed back from race "api" 
-- Minimum information to be displayed: Cloth Number, Days since last run, age, form
-- Should be able to order by : form, odds, cloth number, age
-- Age calculated by : Horses foaled in any given year are classified as being born on Jan 1st therefore horse age is simply curr year - foaled year.
-- Form order to be calculated by : curr season results /  last 3 results average (rounded up to nearest integer) are lower / tie breaker being last race horse was in
-- stubbed or mocked network call to api
-- non runners shouldn't be shown
-
-Your App should not crash.
+The product owner has given you some free reign to implement features that you think the user might be interested in having. This could include Animations, notifications etc. Note you may be asked to explain why you have implemented some features.
 
 You should support the latest OS for devices and the last preceding one. e.g iOS 11 & iOS 10.
 
