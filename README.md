@@ -12,8 +12,9 @@ The App should load a WebView and load the skybet website https://m.skybet.com
 
 
 ## What we require
+As well as solving the above senario.
 
-You should build a robust mechanism to allow the App to talk to the Web and Vice-Versa
+You should also build and demonstrate a robust mechanism to allow the App to send messages to the Web Client.
 
 The product owner has given you some free reign to implement features that you think the user might be interested in having. This could include Animations, notifications etc. Note you may be asked to explain why you have implemented some features.
 
