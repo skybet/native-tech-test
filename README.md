@@ -10,16 +10,17 @@ The product owner has given you some free reign to implement features that you t
 
 ## **Additional Requirements**
 
-- Users should be able to sort the horses by cloth number, by odds, by form. 
-- The data should be stubbed or sit on a remote server. The JSON file provided shows an example of one race. You may create your own or edit this as you see fit.
-- There should be at least 10 races.
+1. Users should be able to sort the horses by cloth number, by odds, by form. 
+2. The data should be stubbed or sit on a remote server. 
+- The JSON file provided shows an example of one race. You may create your own or edit this as you see fit.
+3. There should be at least 10 races.
 
 ## **Expectations**
 
-We value well structured, modular, reusable code with maintainable unit tests.
-You should not use code generation tools.
-We expect you to use source control.
-You can write in the following languages:
+1. We value well structured, modular, reusable code with maintainable unit tests.
+2. You should not use code generation tools.
+3. We expect you to use source control.
+4. You can write in the following languages:
 - iOS: Objective-C / Swift
 - Android: Java / Kotlin
 
