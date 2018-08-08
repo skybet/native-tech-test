@@ -1,43 +1,34 @@
 # SkyBet iOS/Android Tech Test
 
-## Scenario
+# **Scenario**
 
-You are asked to build a new feature for a betting App, this is to allow the user to login using a 4 digit PIN or use TouchID/Face ID depending on device once authenticated the user will then see a list of runners in a horse race.
+You have been asked to create a new app. The app should be capable of displaying information about multiple horse races. A user should be able to select a race to get more detailed information about the horses within the race including the horses odds. They should be able to tap on the odds and this should open the horse racing page on the SkyBet website within the app. 
 
-On initial load the App should ask for the user to enter a PIN which needs to be stored securely on the device.
+How you implement the UI is up to you, we won’t be testing your design skills e.g App Icons or Images etc. 
 
-On subsequent launches the App should ask for either a PIN / finger print / face Id depending on the users device preference.
+The product owner has given you some free reign to implement features that you think the user might be interested in having. This could include securing the app using TouchID(iOS)/Fingerprint(Android), FaceID or Animations, etc. Note that you may be asked to explain why you have implemented some features.
 
-The App should load a WebView and load the skybet website https://m.skybet.com
+## **Additional Requirements**
 
+- Users should be able to sort the horses by cloth number, by odds, by form. 
+- The data should be stubbed or sit on a remote server. The JSON file provided shows an example of one race. You may create your own or edit this as you see fit.
+- There should be at least 10 races.
 
-## What we require
-As well as solving the above senario.
+## **Expectations**
 
-You should also build and demonstrate a robust mechanism to allow the App to send messages to the Web Client.
+We value well structured, modular, reusable code with maintainable unit tests.
+You should not use code generation tools.
+We expect you to use source control.
+You can write in the following languages:
+- iOS: Objective-C / Swift
+- Android: Java / Kotlin
 
-The product owner has given you some free reign to implement features that you think the user might be interested in having. This could include Animations, notifications etc. Note you may be asked to explain why you have implemented some features.
+## **What to submit**
 
-You should support the latest OS for devices and the last preceding one. e.g iOS 11 & iOS 10.
+- A bundled/archived repository showing your commit history, for example:
+    git bundle create <yourname>.bundle --all --branches
+- A covering note explaining the technology choices you have made.
+  
+## **Equality & Diversity**
 
-## Expectations
-
-We value well structured, modular, reusable code with unit tests that is easily maintainable.
-
-Spend up to 6 hours over no more than 5 days on this. We expect to see regular commits to Git with meaningful commit messages.
-
-You will write this in Objective-C for iOS & Java/Kotlin for Android
-
-You should not use a code generation tool/frameworks
-
-For Android apps we expect you to use the latest version of Android Studio, and for iOS the latest version of XCode. No Beta versions.
-
-## What to submit
-
-* A bundled/archived repository showing your commit history, for example:
-
-```git bundle create <yourname>.bundle --all --branches```
-
-* A covering note explaining the technology choices you have made.
-
-
+We consider all candidates equally, fairly and without bias. To that end, we ask that you do not leave any personally identifying information in your submission (such as your name within an author field or file, or in use as test data). 
