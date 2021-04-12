@@ -21,7 +21,7 @@ The product owner has given you some free reign to implement features that you t
 2. You should not use code generation tools.
 3. We expect you to use source control.
 4. You can write in the following languages:
-- iOS: Objective-C / Swift
+- iOS: Objective-C / Swift (A note on our UI preferences: whilst we are investigating SwiftUI, we rely heavily on UIKit day to day. If you've not done this before, don't worry - we'll help you learn)
 - Android: Java / Kotlin
 
 ## **What to submit**
